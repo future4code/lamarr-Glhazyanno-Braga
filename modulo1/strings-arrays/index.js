@@ -36,15 +36,7 @@ console.log (listaComidas[4])
 
 let comidaFav = prompt("Diga um comida")
 
-let a = listaComidas[3]
-let b = listaComidas[4]
-
-
-
-listaComidas.splice(2, 3)
-listaComidas.push(comidaFav)
-//console.log(listaComidas,a )
-listaComidas.push(a , b)
+listaComidas[2] =comidaFav
 
 console.log(listaComidas)
 
