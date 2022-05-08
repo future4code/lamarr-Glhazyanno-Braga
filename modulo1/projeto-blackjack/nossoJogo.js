@@ -11,32 +11,47 @@
  * 
  */
 
-    
-console.log('Boas vindas ao jogo de Blackjack!')
+    console.log('Boas vindas ao jogo de Blackjack')
 
+    if(confirm("Quer iniciar uma nova rodada")){
 
-   if(confirm('Vamos jogar ?sim ou não ')){
+        const carta = comprarCarta(); 
+
+          
        
-      const carta = comprarCarta();
-      
-      for(let i=0; i<2 ; i++){ 
-      
-      let carta1DoUsuario = carta.valor
-      
+          let usuario1Carta = comprarCarta()
+          let usuario2Carta = comprarCarta()
+          let computador1Carta = comprarCarta()
+          let computador2Carta = comprarCarta()
+          
+          let somaCartaUsuario = usuario1Carta.valor + usuario2Carta.valor
+          let somaCartaComputador = computador1Carta.valor + computador2Carta.valor
 
-       console.log(carta.texto)
-       console.log(carta1DoUsuario)
-      }
-      for(let i=0; i<2 ; i++){ 
-      
-         let carta2DoUsuario = carta.valor
          
+  
+          console.log(comprarCarta()) 
+
+          console.log(comprarCarta()) 
+
+          console.log(`Usuario - cartas ${usuario1Carta.texto} ${usuario2Carta.texto} - pontuação ${somaCartaUsuario} `)
+          console.log(`Computador - cartas ${computador1Carta.texto} ${computador2Carta.texto} - pontuação ${somaCartaComputador} `)
+ 
+              if(somaCartaComputador < somaCartaUsuario ){
+                  console.log('O usuário ganhou!')   }           
+                   
+                  if (somaCartaComputador > somaCartaUsuario) {
+                      console.log('O computador ganhou!')
+                 
+                       } 
+                       if(somaCartaComputador === somaCartaUsuario) {
+                        console.log('Empate')
    
-          console.log(carta.texto)
-          console.log(carta2DoUsuario)
-         }  
+                           }
+               
+
+          // Computador 
+          
 
     }else{
-       console.log('O jogo acabou')
+       console.log("O jogo acabou")
     }
-
