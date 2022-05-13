@@ -1,0 +1,19 @@
+1. Ter a atenção do enuciado e ler com calma observando bem
+o que a questão nos está pedindo.
+
+2. Retira informações relevantes atraves disso podemos afunilar 
+o projeto retirando o que é mais importante.
+
+3. Pensar Entradas e Saidas, imaginar comp é os argumentos das entradas 
+e o que será gerado para a saída do codigo
+
+4. Fazer um esquema visual, pode até mesmo desenhar com formas geometricas
+o que o codigo pretende execultar com cada função
+
+5 criar codigo feio, não se importar muito com a estrutura nome de variaveis 
+ou praticidade do codigo de modo gerar deixar as ideias geral do codigo
+
+6 testar força-bruta, testar se codigo funciona de verdade 
+
+7 Refatorar, seria deixar o codigo mais pratico com funções e metodos
+que deixe o codigo mais limpo e bonito
