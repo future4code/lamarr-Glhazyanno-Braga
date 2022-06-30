@@ -15,15 +15,15 @@ function Post(props){
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
-  const [numeroComentarios, setNumeroComentarios] = useState(0)
+  const [numeroComentarios, setumeroComentarios] = useState(0)
 
-  /*const onClickCurtida = () => {
+  const onClickCurtida = () => {
     setCurtido(!curtido)
     if(curtido) {
-      componenteCurtido = <SecaoCurtir aoEnviar={aoEnviarCurtir}/>
+      
     }
     console.log(curtir)
-  }*/
+  }
   
   const onClickComentario = () => {
     setComentando(!comentando)
