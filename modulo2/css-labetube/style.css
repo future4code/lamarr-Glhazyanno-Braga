@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+.cabecalho{
+    background-color:orange ;
+    height: 60px;
+    height: 40px;
+    padding: 10px;
+}
+
+.div-pai{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 30fr 1fr;
+    /* Define posicionamento dos itens no grid
+       de acordo com os grid-area de cada elemento filho */
+    grid-template-areas:"head head head"
+                        "n1 main n2"
+                        "foot foot foot";
+}
+
+header{
+    background: orange;
+    display: grid;
+    grid-template-columns:175px 1fr ;
+    justify-items: end;
+    align-items: center;
+    grid-area: head; /*defife id do grid-area */
+}
+
+
+.menu{
+    background: white;
+}
+#nav-1{
+    grid-area: n1; /*defife id do grid-area */
+}
+#nav-2{
+    grid-area: n2; /*defife id do grid-area */
+}
+.principal{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    align-items:center ;
+    gap:10px;
+    grid-area: main; /*defife id do grid-area */
+    padding-top: 20px;
+    
+}
+
+.card{
+    border: solid 2px green;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.img-card{
+    
+    width: 228px;
+    height: 150px;
+}
+.card h2{
+    font-size: 20px;
+}
+.rodape{
+    grid-area: foot;
+    background-color: gray;
+    height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+h2{
+    padding-bottom: 40px;
+
+}
+
+
