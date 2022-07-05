@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menuLogin{
+    background-color:mediumvioletred ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icones{
+    width: 20px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+
+}
+.container{
+    display: flex;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: top;
+    align-items: center;
+    
+    
+}
+.menuEsquerda{
+    display: flex;
+    flex-direction: top;
+    align-items: center;
+}
+.bolo{
+    width: 200px;
+}
+
+footer{
+    background-color:mediumvioletred ;
+}
