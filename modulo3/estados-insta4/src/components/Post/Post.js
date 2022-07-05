@@ -38,7 +38,6 @@ function Post(props){
     setComentando(false)
     setNumeroComentarios(numeroComentarios + 1)
   }
-
   let iconeCurtida
 
     if(curtido) {
