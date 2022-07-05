@@ -6,24 +6,23 @@ import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
-import {SecaoCurtir} from '../SecaoComentario/SecaoCurtir'
+
+
 
 
 function Post(props){
-  
+  const [state, setState] = useState({
+    curtido: false,
+    numeroCurtidas: 0,
+    comentando: false,
+    numeroComentarios: 0
+  })
+
 
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
-  const [numeroComentarios, setumeroComentarios] = useState(0)
 
-  const onClickCurtida = () => {
-    setCurtido(!curtido)
-    if(curtido) {
-      
-    }
-    console.log(curtir)
-  }
   
   const onClickComentario = () => {
     setComentando(!comentando)
@@ -33,16 +32,12 @@ function Post(props){
     console.log(comentando)
   }
   
-  const aoEnviarCurtir = () => {
-    setCurtido(false)
-    setnumeroCurtidas(numeroCurtidas + 1)
-  }
-  
+
   const aoEnviarComentario = () => {
     setComentando(false)
     setNumeroComentarios(numeroComentarios + 1)
   }
- 
+
   let iconeCurtida
 
     if(curtido) {
@@ -70,7 +65,7 @@ function Post(props){
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
-          valorContador={numeroCurtidas}
+
         />
 
         <IconeComContador
