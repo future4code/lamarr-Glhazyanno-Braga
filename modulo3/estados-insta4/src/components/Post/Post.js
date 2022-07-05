@@ -9,6 +9,7 @@ import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 
 
 
+
 function Post(props){
   const [state, setState] = useState({
     curtido: false,
@@ -17,17 +18,11 @@ function Post(props){
     numeroComentarios: 0
   })
 
+
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
-  const [numeroComentarios, setNumeroComentarios] = useState(0)
 
-  const onClickCurtida = () => {
-    setCurtido(!curtido)
-    if(curtido) {
-      setnumeroCurtidas(numeroCurtidas + 1)
-  }
-}
   
   const onClickComentario = () => {
     setComentando(!comentando)
@@ -37,10 +32,12 @@ function Post(props){
     console.log(comentando)
   }
   
+
   const aoEnviarComentario = () => {
     setComentando(false)
     setNumeroComentarios(numeroComentarios + 1)
   }
+
   let iconeCurtida
 
     if(curtido) {
@@ -68,7 +65,7 @@ function Post(props){
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
-          valorContador={state.numeroCurtidas}
+
         />
 
         <IconeComContador

@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './components/Post/Post';
+
 import './style.css'
 
 
@@ -11,15 +12,7 @@ return(
             fotoUsuario={'https://picsum.photos/50/50'}
             fotoPost={'https://picsum.photos/200/150'}
           />
-            <Post
-            nomeUsuario={'Ronaldo'}
-            fotoUsuario={'https://picsum.photos/50/50'}
-            fotoPost={'https://picsum.photos/200/150'}
-          />
-            <Post
-            nomeUsuario={'Batman'}
-            fotoUsuario={'https://picsum.photos/50/50'}
-            fotoPost={'https://picsum.photos/200/150'}
+
           />
   </div>
 )

@@ -1,0 +1,37 @@
+h1{
+    color: blue;
+}
+.menu{
+    color:red;
+    
+    
+}
+.icones{
+    text-align: center;
+    background-color: rgb(196, 245, 255);
+    margin-left: 5px;
+    border: 2px solid rebeccapurple;
+}
+.tabela{
+    
+    background-color: rgb(219, 203, 21);
+    margin-left: 5px;
+    border: 2px solid rgb(152, 93, 228);
+    text-align: center;
+}
+#fotos{
+    border: 2px solid rgb(152, 93, 228);
+}
+.botao{
+    border: 2px solid rgb(152, 93, 228);
+    margin-top: 15px;
+    padding: 10px;
+}
+.equipe{
+    background-color: rgb(68, 102, 238);
+    margin-left: 5px;
+    border: 2px solid rgb(152, 93, 228);
+    text-align: center;
+    font-size: large;
+    color: antiquewhite;
+}
