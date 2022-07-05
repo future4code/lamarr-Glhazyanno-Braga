@@ -7,7 +7,17 @@ function App() {
 return(
   <div className='MainContainer'>
            <Post
-            nomeUsuario={'paulinhas'}
+            nomeUsuario={'paulinha'}
+            fotoUsuario={'https://picsum.photos/50/50'}
+            fotoPost={'https://picsum.photos/200/150'}
+          />
+            <Post
+            nomeUsuario={'Ronaldo'}
+            fotoUsuario={'https://picsum.photos/50/50'}
+            fotoPost={'https://picsum.photos/200/150'}
+          />
+            <Post
+            nomeUsuario={'Batman'}
             fotoUsuario={'https://picsum.photos/50/50'}
             fotoPost={'https://picsum.photos/200/150'}
           />
