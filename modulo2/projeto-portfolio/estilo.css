@@ -1,0 +1,89 @@
+
+.titulo {
+    text-align: center;
+}
+.coTitulo {
+    text-align: center;
+}
+.menu{
+    text-align: center;
+}
+.menu1{
+    background-color: rgb(221, 255, 205);
+    color: black;
+    border: solid black 2px;
+    font-size: 30px;
+    
+}
+.menu2{
+    background-color: rgb(221, 255, 205);
+    color: black;
+    border: solid black 2px;
+    font-size: 30px;
+
+}
+.perfil{
+    text-align: center;
+}
+.fotoPerfil{
+    width: 200px;
+   
+}
+.textPrincipal{
+    text-align: center;
+}
+.listaEnsino{
+ display: inline;
+
+ padding: 20px;
+ padding-right: 15px;
+}
+.listaHabilidade{
+   display: inline;
+    
+   padding: 20px;
+}
+.listas{
+    padding-left: 450px;
+    display: flex ;
+    background-color: bisque;
+    
+    width: 900px;
+    
+}
+.galeria{
+    background-color: bisque;
+    display: flex;
+    text-align: center;
+}
+.imagens{
+    width: 400px;
+}
+.projeto1{
+    text-align: center;
+    padding-left: 50px;
+}
+.projeto2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(221, 255, 205);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.form{
+    text-align: center;
+    background-color: bisque;
+}
+.nav{
+    background-color: bisque; 
+}
+.projetoG1{
+    font-size: 25px;
+    text-decoration: none;
+}
