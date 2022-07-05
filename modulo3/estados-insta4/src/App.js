@@ -7,7 +7,7 @@ function App() {
 return(
   <div className='MainContainer'>
            <Post
-            nomeUsuario={'paulinha'}
+            nomeUsuario={'paulinhas'}
             fotoUsuario={'https://picsum.photos/50/50'}
             fotoPost={'https://picsum.photos/200/150'}
           />
