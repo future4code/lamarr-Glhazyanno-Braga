@@ -24,9 +24,7 @@ function Post(props){
 
   const onClickCurtida = () => {
     setCurtido(!curtido)
-    if(curtido) {
-      setnumeroCurtidas(numeroCurtidas + 1)
-  }
+    setnumeroCurtidas(numeroCurtidas + 1)
 }
   
   const onClickComentario = () => {
