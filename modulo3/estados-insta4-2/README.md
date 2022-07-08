@@ -2,7 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## SURGE DO PROJETO
 
-bored-sleet.surge.sh
+scattered-rub.surge.sh
+
 
 
 ## Available Scripts
