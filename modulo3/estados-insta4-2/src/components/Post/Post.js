@@ -20,6 +20,12 @@ function Post(props){
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
+  const [numeroComentarios, setNumeroComentarios] = useState(0)
+
+  const onClickCurtida = () => {
+    setCurtido(!curtido)
+    setnumeroCurtidas(numeroCurtidas + 1)
+}
   
   const onClickComentario = () => {
     setComentando(!comentando)
@@ -33,6 +39,7 @@ function Post(props){
     setComentando(false)
     setNumeroComentarios(numeroComentarios + 1)
   }
+
   let iconeCurtida
 
     if(curtido) {
@@ -60,6 +67,7 @@ function Post(props){
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
+          valorContador={state.numeroCurtidas}
         />
 
         <IconeComContador

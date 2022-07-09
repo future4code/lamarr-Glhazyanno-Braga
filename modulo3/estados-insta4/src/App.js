@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from './components/Post/Post';
-
 import './style.css'
 
 
@@ -13,7 +12,7 @@ return(
             fotoPost={'https://picsum.photos/200/150'}
           />
 
-          />
+          
   </div>
 )
 
