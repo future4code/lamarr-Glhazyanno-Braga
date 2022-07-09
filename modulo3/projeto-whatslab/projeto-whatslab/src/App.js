@@ -14,9 +14,11 @@ justify-content: center;
 
 `
 
+
 const Header = styled.header`
   
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
   width: 800px;
   height: 550px;
   background-color: gray;
@@ -49,9 +51,18 @@ const Form = styled.form`
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
-    width: 20%;
+    width: 15%;
+     
+    
   }
-
+  .classMensagem{
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 50%;
+  }
+  
   button {
     border: none;
     border-radius: 10px;
@@ -65,6 +76,14 @@ const Form = styled.form`
   }
   
   `
+const classMensagem = styled.input`
+ padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 30%;
+`
+
 
 function App() {
    // estados
@@ -119,7 +138,7 @@ function App() {
                     onChange={handleInputUsuario}               
               />  
               <label>Mensagem: </label>
-              <input
+              <input className='classMensagem'
                     placeholder='Mensagem'
                     value={inputMensagem}
                     onChange={handleInputMensagem}

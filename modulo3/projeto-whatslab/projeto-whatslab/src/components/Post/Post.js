@@ -12,6 +12,11 @@ p{
   margin-left: 10px;
 }
 
+.nomeNegrito{
+  font-weight: bold;
+}
+
+
 `
 
 function Post(props){
@@ -20,7 +25,7 @@ function Post(props){
   return(
     < PostDaMensagem >
         
-        <p>{props.nomeUsuario}</p>
+        <p className='nomeNegrito'>{props.nomeUsuario}</p>
         <p>{props.mensagem} </p>
       
 
