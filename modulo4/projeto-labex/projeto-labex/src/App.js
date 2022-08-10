@@ -1,11 +1,15 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
+      <Routes>
+        <Route  index element ={Home/>} />
+        <Route path="teams" element />
+
+      </Routes>
       
-      teste
     </BrowserRouter>
   );
 }
