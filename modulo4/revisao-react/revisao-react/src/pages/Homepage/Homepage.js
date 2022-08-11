@@ -4,13 +4,13 @@ import { HomePageContainer } from "./style";
 import { results } from "../../data/data";
 
 export function Homepage(props){
-         const { image, name, species }=props
+         const { character }=props
          
 
-         const renderList = results.map( char =>{
+         const renderList = character.map( char =>{
                return(
                 <Card
-                
+                key = {char.id}
                 img = {char.image}
                 name = {char.name}
                 species={char.species}
