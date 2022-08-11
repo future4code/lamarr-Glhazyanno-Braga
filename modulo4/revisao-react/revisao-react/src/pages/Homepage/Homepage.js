@@ -5,7 +5,7 @@ import { results } from "../../data/data";
 
 export function Homepage(props){
          const { character }=props
-         
+
 
          const renderList = character.map( char =>{
                return(
