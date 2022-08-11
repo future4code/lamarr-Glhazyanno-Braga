@@ -8,8 +8,17 @@ export function Homepage(){
          <Header/>
          
          <main>
-         <Card/>
-         <Card/>
+         <Card
+         img = {"https://rickandmortyapi.com/api/character/avatar/3.jpeg"}
+         name = {"Alfredo"}
+         species={"Humano"}
+         
+         />
+         <Card
+         img = {"https://rickandmortyapi.com/api/character/avatar/2.jpeg"}
+         name = {"Alfredo"}
+         species={"Humano"}
+         />
          <Card/>
          <Card/>
          <Card/>
