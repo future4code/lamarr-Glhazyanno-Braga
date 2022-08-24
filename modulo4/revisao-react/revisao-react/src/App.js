@@ -10,29 +10,55 @@ import { useState } from 'react';
 function App() {
 
   const [character,setCharacter] = useState(results)
+  const [image , setImage] =useState("")
+  const [name , setName] =useState("")
+  const [species , setSpecies] =useState("")
 
+  const handleInputImage = (event) =>setImage( event.target.value)
+  const handleInputName = (event) => setName (event.target.value)
+  const handleInputSpecies = (event) => setSpecies (event.target.value)
 
-  const addCharacter =() =>{
+  const addCharacter =(event) =>{
+    event.preventDefault()
+
        const newCharacter ={
-        "id": 20,
-        "name": "teste",
-        "species": "Human",
-        "origin": {
-            "name": "Earth"
-    },
-    "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
+        id: Date.now(),
+        name: name,
+        species: species,
+        origin: {
+            name: "Earth"
+          },
+         image: image
        }
 
-      const characterList =[...character, newCharacter]
-      setCharacter(characterList)
+      const newCharacterList =[...character, newCharacter]
+      setCharacter(newCharacterList)
+
+      setImage("")
+      setName("")
+      setSpecies("")
+
 }
+      const removeCharacter =(id) => {
+        const filteredList = character.filter(char =>{
+          return char.id !== id }
+          )
+
+          setCharacter(filteredList)
+      }
   
 
   return (
     <div className="App">
-      <Homepage character={character}  />
+      <Homepage 
+      character={character}
+      states={{name,species,image}}
+      handles={{handleInputImage,handleInputName,handleInputSpecies}}
+      addCharacter={addCharacter}
+      removeCharacter={removeCharacter}
+      />
       <GlobalStyle/>
-      <button onClick={addCharacter}>Adicionar</button>
+    
     </div>
   );
 }
