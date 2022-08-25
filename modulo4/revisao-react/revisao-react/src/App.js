@@ -13,10 +13,14 @@ function App() {
   const [image , setImage] =useState("")
   const [name , setName] =useState("")
   const [species , setSpecies] =useState("")
+  const [query, setQuery] = useState("")
+  const [orderParam, setOrderParam] = useState("")
 
   const handleInputImage = (event) =>setImage( event.target.value)
   const handleInputName = (event) => setName (event.target.value)
   const handleInputSpecies = (event) => setSpecies (event.target.value)
+  const handleInputQuery = (event)=> setQuery(event.target.value)
+  const handleInputOrderParam = (event) =>setOrderParam(event.target.value)
 
   const addCharacter =(event) =>{
     event.preventDefault()
@@ -52,8 +56,8 @@ function App() {
     <div className="App">
       <Homepage 
       character={character}
-      states={{name,species,image}}
-      handles={{handleInputImage,handleInputName,handleInputSpecies}}
+      states={{name,species,image, query, orderParam}}
+      handles={{handleInputImage,handleInputName,handleInputSpecies,handleInputQuery,handleInputOrderParam}}
       addCharacter={addCharacter}
       removeCharacter={removeCharacter}
       />
