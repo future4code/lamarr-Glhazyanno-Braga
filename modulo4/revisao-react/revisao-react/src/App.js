@@ -15,6 +15,8 @@ function App() {
   const [species , setSpecies] =useState("")
   const [query, setQuery] = useState("")
   const [orderParam, setOrderParam] = useState("")
+  const [page , setPage] = useState("homepage")
+  const [id , setId] = useState(0)
 
   const handleInputImage = (event) =>setImage( event.target.value)
   const handleInputName = (event) => setName (event.target.value)
@@ -22,6 +24,10 @@ function App() {
   const handleInputQuery = (event)=> setQuery(event.target.value)
   const handleInputOrderParam = (event) =>setOrderParam(event.target.value)
 
+  const changePage = (page , id) => {
+    setPage(page)
+    setId(id)
+  }
   const addCharacter =(event) =>{
     event.preventDefault()
 
@@ -51,18 +57,33 @@ function App() {
           setCharacter(filteredList)
       }
   
-
-  return (
-    <div className="App">
-      <Homepage 
+  const renderPage = () => {
+     switch(page){
+      case 'homepage':
+      return <Homepage 
       character={character}
       states={{name,species,image, query, orderParam}}
       handles={{handleInputImage,handleInputName,handleInputSpecies,handleInputQuery,handleInputOrderParam}}
       addCharacter={addCharacter}
       removeCharacter={removeCharacter}
+      changePage={changePage}
+
       />
+      case 'detailspage':
+        return <DetailsPage
+        character={character}
+        id={id}
+        />
+     }
+
+  }    
+
+  return (
+    <div className="App">
       <GlobalStyle/>
-    
+      {renderPage()}
+      
+
     </div>
   );
 }

@@ -10,6 +10,7 @@ export function Homepage(props){
          const { handleInputImage, handleInputName, handleInputSpecies, handleInputQuery, handleInputOrderParam } = props.handles
          const {addCharacter} =props
          const {removeCharacter} = props
+         const {changePage} = props
 
          const renderList = character
          .filter( char => query === "" || char.name.toLowerCase().includes(query) )
@@ -24,6 +25,7 @@ export function Homepage(props){
                 name = {char.name}
                 species={char.species}
                 removeCharacter={removeCharacter}
+                changePage={changePage}
                 
                 />
                )
