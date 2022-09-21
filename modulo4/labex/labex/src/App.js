@@ -1,6 +1,6 @@
 import {Router} from './routes'
 
-function App() {
+const App = () => {
   return (
     <div>
         <Router/>
