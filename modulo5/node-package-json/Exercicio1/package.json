@@ -1,0 +1,16 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "idadeNome":"node ./soma.js",
+    "start":"node./index.js"
+
+    
+
+  },
+  "keywords": [],
+  "author": "Glhazyanno",
+  "license": "ISC"
+}
