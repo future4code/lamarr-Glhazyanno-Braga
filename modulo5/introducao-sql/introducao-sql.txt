@@ -1,0 +1,71 @@
+### Exercício 1
+a) id VARCHAR(255): é melhor pois se trata de um string com varios caracteres 
+    name VARCHAR (255):é melhor pois se trata de um string com varios caracteres
+    birth_date DATE: representa a data em formato (YYYY-MM-DD),
+    gender VARCHAR(6) : é melhor pois se trata de um string com varios caracteres
+b)
+c) Através desse comando podemos obter a seguinte resposta : 
+id,
+name,
+birth_date
+gender
+
+### Exercício 2
+a) ```sql
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "002", 
+  "Gloria Pires",
+  12000000,
+  "1963-08-23", 
+  
+);
+```
+
+b) Enquanto a chave for Primaria não se pode repetir o mesmo numero no id
+
+c) INSERT INTO Actor (id, nome, salary, birth_date, gender)
+VALUES(
+  "003", 
+  "Fernanda Montenegro",
+  300000,
+  "1929-10-19", 
+  "female"
+);
+
+d)INSERT INTO Actor (id,nome, salary, birth_date, gender)
+VALUES(
+  "004",
+  "desconhecido",
+  400000,
+  "1949-04-18", 
+  "male"
+);
+
+e)INSERT INTO Actor (id, nome, salary, birth_date, gender)
+VALUES(
+  "005", 
+  "Juliana Paes",
+  719333.33,
+  "1979-03-26", 
+  "female"
+);
+
+f)INSERT INTO Actor (id, nome, salary, birth_date, gender)
+VALUES(
+  "006", 
+  "zeze jorge",
+  80000,
+  "1959-03-26", 
+  "female
+);
+
+### Exercício 3
+a) SELECT * from Actor WHERE gender = "female"
+b) SELECT salary from Actor WHERE nome = "Tony Ramos"
+c) SELECT * from Actor WHERE gender = "invalid"
+
+d) SELECT id,nome,salary from Actor WHERE salary > 500000
+
+e) SELECT  id,nome from Actor WHERE id = "002";
+
